@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰</title>
+</head>
+<body>
+    <h1>추석 선물세트</h1>
+    <form>
+        <fieldset>
+            <legend>선물 선택</legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox"> 선물용 3kg</label>
+                    <input type="number" min="0" max="5">개 (최대 5개)
+                </li>
+                <!-- label 안에 input을 둘 수도 있고 따로 두고 for 속성 이용할 수도 있고 -->
+                <li>
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1">선물용 5kg</label>
+                    <input type="number" min="0" max="3">개 (최대 3개)
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

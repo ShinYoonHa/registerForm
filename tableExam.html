@@ -21,11 +21,22 @@
         td {
             background-color: white;
         }
-        
+        #imgCover {
+            border: 1px solid white;
+            width: 230px;
+            perspective: 300px;
+        }
         img {
-            margin: 20px 0 0 20px;
+            margin: 20px 0 0 0px;
             box-shadow: 5px 5px 15px 2px #000;
             border-radius: 50%;
+        }
+        img:hover {
+            transform: rotateX(360deg);
+            transition-property: all;
+            transition-duration: 2s;
+            width: 100px;
+            height: 100px;
         }
         body {
             background-image: url("img/abc.jpg");
@@ -61,7 +72,7 @@
         </tr>
     </table>
 
-    <div>
+    <div id="imgCover">
         <img src="img/abc.jpg">
     </div>
 </body>
